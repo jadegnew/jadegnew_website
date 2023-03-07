@@ -18,7 +18,7 @@ function sendEmail() {
     body: JSON.stringify(msg),
   };
 
-  fetch(process.env.SENDMAIL || 'http://localhost:3000/api/sendMail', options);
+  fetch('https://jadegnew.herokuapp.com/api/sendMail', options);
 }
 
 function goToSend() {
@@ -37,7 +37,7 @@ function getCV() {
     method: 'Get',
   };
 
-  fetch(process.env.LINK || 'http://localhost:3000/api/cv', options)
+  fetch('https://jadegnew.herokuapp.com/api/cv', options)
     .then((response) => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
