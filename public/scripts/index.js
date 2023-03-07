@@ -19,6 +19,8 @@ function sendEmail() {
   };
 
   fetch('https://jadegnew.herokuapp.com/api/sendMail', options);
+    alert("Message sended");
+
 }
 
 function goToSend() {
