@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dmytro Khabatilin</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonst.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/main_image.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- hero section start -->
+    <div class="hero">
+      <nav>
+        <h2 class="logo">D<span>K</span></h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contact">Contact me</a></li>
+        </ul>
+        <a href="#" class="btn" onclick="getCV()">Get my CV</a>
+      </nav>
+      <div class="content">
+        <h4>Hello, my name is</h4>
+        <h1>Dmytro <span>Khabatilin</span></h1>
+        <h3>I am a Back-end Developer.</h3>
+        <div class="newslatter">
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Enter Your Email"
+            />
+            <input
+              type="submit"
+              name="submit"
+              value="Let's start"
+              onclick="goToSend()"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- About section start -->
+    <section class="about" id="AboutMe">
+      <div class="main">
+        <img src="img/main_image.png" alt="" />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <h5>Back-end <span>developer</span></h5>
+          <p>
+            I'm NodeJS backend developer from Kharkiv, Ukraine. 19 years old,
+            computer science student of Kharkov National University of Radio
+            Electronics. I am not afraid of new tasks and challenges. I am fond
+            of backend programming and kittens.
+          </p>
+          <!-- <button type="button">Let's Talk</button> -->
+          <a type="button" class="letstalkbutton" href="#Contact">Let's Talk</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- service section start -->
+    <div class="service" id="Skills">
+      <div class="title">
+        <h2>My Skills</h2>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <i class="fa-solid fa-code"></i>
+          <h5>Back-end development</h5>
+          <div class="pra">
+            <p>
+              I develop monolithic and microservice architectures on NodeJS |
+              NestJS | Express and TypeScript. I understand algorithms and data
+              structures.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-database"></i>
+          <h5>Databases</h5>
+          <div class="pra">
+            <p>
+              I understand the principles of working with SQL/NoSQL databases,
+              the principles of building abstractions over them. I use
+              PostgreSQL and MongoDB.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h5>Most Used</h5>
+          <div class="pra">
+            <p>
+              JavaScript, TypeScript, NodeJS, Express, NestJS, RabbitMQ, ORM
+              models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact me -->
+    <div class="contact-form" id="Contact">
+      <span class="heading">Contact Me</span>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" required="" id="nameId" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="" />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required=""></textarea>
+        <button type="submit" onclick="sendEmail()">Submit</button>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>Dmytro Khabatilin</p>
+      <p>My socials:</p>
+      <div class="social">
+        <a href="mailto:dmytro.khabatilin@gmail.com" target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <a href="https://github.com/jadegnew" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/дмитро-хабатілін-21972b267/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://t.me/ki_slota" target="_blank"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
